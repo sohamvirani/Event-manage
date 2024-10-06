@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "deployments": [
+    {
+      "source": "src/server.js",
+      "handler": "@vercel/node"
+    }
+  ],
+  "paths": [
+    {
+      "source": "/(.*)",
+      "target": "src/server.js"
+    }
+  ]
+}
